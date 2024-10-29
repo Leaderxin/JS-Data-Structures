@@ -1,0 +1,85 @@
+{
+  "name": "JS-Data-Structures",
+  "version": "0.1.0",
+  "author": {
+    "name": "Leaderxin",
+    "email": "shazhoulen@outlook.com",
+    "url": "https://github.com/Leaderxin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leaderxin/JS-Data-Structures.git"
+  },
+  "main": "./dist/JS-Data-Structures.cjs",
+  "module": "./dist/JS-Data-Structures.esm.js",
+  "jsdelivr": "./dist/JS-Data-Structures.iife.js",
+  "exports": {
+    ".": {
+      "require": "./dist/JS-Data-Structures.cjs",
+      "import": "./dist/JS-Data-Structures.esm.js",
+      "types": "./dist/JS-Data-Structures.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/",
+      "types": "./dist/"
+    }
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "prebuild": "node-gyp -c 'rm -rf dist/*' -c 'configure build'",
+    "build": "tsc && vite build",
+    "postbuild": "dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "format": "prettier . --write",
+    "upgrade": "upgradeps",
+    "release": "npm run build && np"
+  },
+  "bugs": {
+    "url": "https://github.com/Leaderxin/JS-Data-Structures/issues"
+  },
+  "description": "Package description.",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "src",
+    "package.json"
+  ],
+  "homepage": "https://github.com/Leaderxin/JS-Data-Structures",
+  "keywords": [
+    "some",
+    "keywords"
+  ],
+  "license": "MIT",
+  "private": false,
+  "sponsor": {},
+  "type": "module",
+  "types": "./dist/JS-Data-Structures.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/JS-Data-Structures.d.ts"
+      ]
+    }
+  },
+  "typings": "./dist/JS-Data-Structures.d.ts",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.11.5",
+    "@vitest/coverage-v8": "^1.2.1",
+    "dts-bundle-generator": "^9.2.4",
+    "jsdom": "^24.1.0",
+    "lint-staged": "^15.2.0",
+    "np": "^10.0.6",
+    "prettier": "^3.2.4",
+    "terser": "^5.31.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "upgradeps": "^2.0.6",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1"
+  }
+}
