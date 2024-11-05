@@ -2,7 +2,7 @@ const config = {
     entries: [
         {
             filePath: "./src/index.ts",
-            outFile: "./dist/index.d.ts",
+            outFile: "./dist/JS-Data-Structures.d.ts",
             noCheck: false,
         },
     ],
