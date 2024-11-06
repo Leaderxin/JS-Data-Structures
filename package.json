@@ -1,5 +1,5 @@
 {
-    "name": "JS-Data-Structures",
+    "name": "easy-data-structures",
     "version": "0.1.0",
     "author": {
         "name": "Leaderxin",
@@ -10,14 +10,14 @@
         "type": "git",
         "url": "https://github.com/Leaderxin/JS-Data-Structures.git"
     },
-    "main": "./dist/JS-Data-Structures.cjs",
-    "module": "./dist/JS-Data-Structures.esm.js",
-    "jsdelivr": "./dist/JS-Data-Structures.iife.js",
+    "main": "./dist/easy-data-structures.cjs",
+    "module": "./dist/easy-data-structures.esm.js",
+    "jsdelivr": "./dist/easy-data-structures.iife.js",
     "exports": {
         ".": {
-            "require": "./dist/JS-Data-Structures.cjs",
-            "import": "./dist/JS-Data-Structures.esm.js",
-            "types": "./dist/JS-Data-Structures.d.ts"
+            "require": "./dist/easy-data-structures.cjs",
+            "import": "./dist/easy-data-structures.esm.js",
+            "types": "./dist/easy-data-structures.d.ts"
         },
         "./dist/": {
             "import": "./dist/",
